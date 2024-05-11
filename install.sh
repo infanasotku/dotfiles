@@ -3,7 +3,7 @@
 # Main script
 
 # Intalling system.
-./src/core_install.sh
+./src/pre_system_install.sh
 
 # Installing packages.
 # TODO: Complete install package script
