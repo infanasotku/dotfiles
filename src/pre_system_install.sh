@@ -28,7 +28,8 @@ pacstrap /mnt base linux linux-firmware nano git linux-headers
 
 # System settings
 genfstab -U /mnt >> /mnt/etc/fstab
-arch-chroot /mnt
+# under chroot
+{
 ln -sf /usr/share/zoneinfo/Asia/Novosibirsk /etc/localtime
 hwclock —systohc
 echo "LANG=en_US.UTF-8 UTF-8
@@ -61,3 +62,4 @@ echo "Enter root password:"
 passwd
 echo "Enter $username password:"
 passwd $username
+} | arch-chroot /mnt
