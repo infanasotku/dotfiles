@@ -24,7 +24,7 @@ mount /dev/nvme0n1p3 /mnt/efi
 mount /dev/nvme0n1p2 /mnt/home
 
 # Installing kernel
-pacstrap /mnt base linux linux-firmware nano git headers
+pacstrap /mnt base linux linux-firmware nano git linux-headers
 
 # System settings
 genfstab -U /mnt >> /mnt/etc/fstab
