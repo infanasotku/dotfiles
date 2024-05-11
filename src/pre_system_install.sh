@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Input params
-echo -n "Enter hostname: "
-read hostname
-
-echo -n "Enter username: "
-read username
-
 # Date
 timedatectl set-ntp true
 timedatectl set-timezone Asia/Novosibirsk
