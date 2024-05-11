@@ -1,5 +1,8 @@
 #!/bin/bash
 
+hostname = $1
+username = $2
+
 ln -sf /usr/share/zoneinfo/Asia/Novosibirsk /etc/localtime
 hwclock —systohc
 echo "LANG=en_US.UTF-8 UTF-8
